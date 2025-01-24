@@ -50,19 +50,30 @@
             Playmate:paper
         </h2>
 
-      <!-- [<a href="https://arxiv.org/abs/2409.12139">Paper</a>] -->
+      <!-- [<a href="">Paper</a>] -->
       [<a href="">Paper</a>]
 		[<a href="">Official Website</a>]
+		[<a href="">Code coming soon </a>]
         <p class="fst-italic mb-0">
 			<br>
-			<b>temp Team</b>
+			<b>Anonymous Team</b>
 		</p><p></p>
         <p></p>
-        <p>temp Inc.</p>
+        <p>Anonymous Inc.</p>
 	</div>
 	<p style="text-align: left"><b>Abstract:</b>
 <!--		Introduce TakinAudioLLM, ....-->
-We present <b>PlayMate111</b>,
+Recent diffusion-based talking face generation models have demonstrated impressive potential in synthesizing videos that accurately match a speech audio clip with 
+a given reference identity. However, existing approaches still encounter significant challenges due to uncontrollable factors, such as inaccurate lip-sync,
+ inappropriate head posture and the lack of fine-grained control over facial expressions. 
+In order to introduce more face-guided conditions beyond speech audio clips, a novel two-stage training framework \textbf{\textit{Playmate}}
+ is proposed to generate more lifelike facial expressions and talking faces. 
+In the first stage, we introduce a decoupled implicit 3D representation along with a meticulously designed \textbf{\textit{motion-decoupled module}}
+ to facilitate more accurate attribute disentanglement and generate expressive talking videos directly from audio cues. Then, in the second stage, 
+ we introduce an \textbf{\textit{emotion-control module}} to encode emotion control information into the latent space, enabling fine-grained control 
+ over emotions and thereby achieving the ability to generate talking videos with desired emotion. Extensive experiments demonstrate that Playmate outperforms
+ existing state-of-the-art methods in terms of video quality and lip-synchronization, and improves flexibility in controlling emotion and head pose. 
+ The code will be available at 
 	<!-- <p style="text-align: center;">
 		<img src="pics/takin-tts-emo.png" height="480" width="1280">
 	</p> -->
@@ -72,11 +83,15 @@ We present <b>PlayMate111</b>,
 	<h2 id="overview" style="text-align: center;"></h2>
 
 		<p style="text-align: center;">
-			<img src="./src/6.png" height="512" width="512">
+			<img src="./src/1.jpg"  width="1000">
 		</p>
 
-	<p style="text-align: center;">
-		We introduce Playmate,
+	<p style="text-align: left;">
+	Playmate can generate lifelike talking faces for arbitrary identity, guided by a speech audio clip and a variety of
+optional control conditions. (a) shows the generation results under different emotional conditions using the same audio clip.
+The top row in (b) shows the driving images, while the bottom row shows the generated results. The poses in the generated
+results are controlled by the driving images, and the lip movements are guided by the driving audio. (c) demonstrates highly
+accurate lip synchronization and vivid, rich expressions across different style images.
 
 	</p>
 </div>
@@ -89,11 +104,15 @@ We present <b>PlayMate111</b>,
     <h2 id="overview" style="text-align: center;">Overview of Playmate</h2>
     
         <p style="text-align: center;">
-            <img src="./src/1.png" height="512" width="512">
+            <img src="./src/2.png"   width="1000">
         </p>
     
-    <p style="text-align: center;">
-		Playmate  
+    <p style="text-align: left;">
+		Playmate is a two-stage training framework that leverages a 3D-Implicit Space Guided
+Diffusion Model to generate lifelike talking faces. In the first stage, Playmate utilizes a motion-decoupled module to enhance attribute
+disentanglement accuracy and trains a diffusion transformer to generate motion sequences directly from audio cues. In the second
+stage, we use an emotion-control module to encode emotion control information into the latent space, enabling fine-grained control over
+emotions, thereby improving flexibility in controlling emotion and head pose
     </p>
 </div>
 
