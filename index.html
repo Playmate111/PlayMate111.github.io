@@ -23,6 +23,10 @@
 	   color: #FF0000;
 	   font-weight: bold;
    }
+   bk {
+	   color: #000000;
+	   font-weight: black;
+   }
    .table>:not(caption)>*>* {
     	background-color: transparent;
    }
@@ -63,7 +67,7 @@
 	</div>
 	<p style="text-align: left"><b>Abstract:</b>
 <!--		Introduce TakinAudioLLM, ....-->
-Recent diffusion-based talking face generation models have demonstrated impressive potential in synthesizing videos that accurately match a speech audio clip with 
+<bk> Recent diffusion-based talking face generation models have demonstrated impressive potential in synthesizing videos that accurately match a speech audio clip with 
 a given reference identity. However, existing approaches still encounter significant challenges due to uncontrollable factors, such as inaccurate lip-sync,
  inappropriate head posture and the lack of fine-grained control over facial expressions. 
 In order to introduce more face-guided conditions beyond speech audio clips, a novel two-stage training framework <b>Playmate</b>
@@ -72,8 +76,8 @@ In the first stage, we introduce a decoupled implicit 3D representation along wi
  to facilitate more accurate attribute disentanglement and generate expressive talking videos directly from audio cues. Then, in the second stage, 
  we introduce an <b>emotion-control module</b> to encode emotion control information into the latent space, enabling fine-grained control 
  over emotions and thereby achieving the ability to generate talking videos with desired emotion. Extensive experiments demonstrate that Playmate outperforms
- existing state-of-the-art methods in terms of video quality and lip-synchronization, and improves flexibility in controlling emotion and head pose. 
- The code will be available at 
+ existing state-of-the-art methods in terms of video quality and lip-synchronization, and improves flexibility in controlling emotion and head pose. </bk>
+ 
 	<!-- <p style="text-align: center;">
 		<img src="pics/takin-tts-emo.png" height="480" width="1280">
 	</p> -->
